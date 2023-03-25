@@ -1,6 +1,6 @@
 <embed 
        type="text/html" 
-       src="/bokeh/index.html"
+       src="/tsibokeh.html"
        width="1100"
        height="600"
        >
