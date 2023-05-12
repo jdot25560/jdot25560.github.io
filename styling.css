@@ -1,5 +1,12 @@
-body{
-    margin:0;
-    background: #F5F5F5;
-    text-align: center;
-}
+<style>
+    body {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: url("your_image_url.jpg");
+        background-size: cover; /* or contain, based on your preference */
+        background-position: center;
+        background-attachment: fixed;
+    }
+    /* Rest of your CSS styles */
+</style>
