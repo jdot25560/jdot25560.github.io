@@ -1,93 +1,109 @@
+<!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+        body {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+    </style>
         <link rel="stylesheet" href="styling.css">
         <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
         <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
         <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
     <head>
     <body>
-        <h1>Association between liquor stores and crime rates in San Francisco.</h1>
-        <p>  
-            The "Police Department Incident Reports Historical 2003 to May 2018.csv" file offers comprehensive information about
-            criminal incidents that happened in San Francisco between January 1, 2003, and May 15, 2018.The San Francisco Police
-            Department (SFPD) collected, analyzed, and made the information publicly accessible through the San Francisco Open 
-            Data Portal. The dataset contains details on the incident's date, time, and place as well as a basic description of the
-            incident type (such as theft or larceny, assault, burglary, etc.).It also contains additional precise information about
-            each occurrence, such as the crime's description, if an arrest was made. The size of the dataset is quite large, with
-            over 1.5 million rows and 35 columns. </p>
-        <p> The kind of crimes that are reported in each area  are what define the profile and standard of living of that region. 
-            The Bookeh plot is made in order to have an overview of the San Francisco district profiles. So moving on to the chart,
-            the percentage rate of each crime category for each district served
-            by a police department is shown. Trespassing reports are common in all districts, although the other types of crime differ.
-            Drugs, theft, assault, and prostitution are recorded crimes in San Francisco's neighborhoods closest to the city center, whereas
-            districts outside the core have high rates of reported crimes involving vehicle theft and reckless driving. The areas in the 
-            center are at a high risk due to the types of events that have been observed over the past ten years, but a heated map may make
-            this more obvious. </p> 
-        <iframe align="center" src="https://jdot25560.github.io/BOKEH.html"  width="100%" height="100%" margin= auto  seamless="seamless"   frameborder="0"> </iframe>
-        Figure 1: Bokeh plot for different crime types in the various PdDistricts
-        <p align="center">The heated map details the criminal activity that occurred in San Francisco between 2007 and 2017.
-            Each district's population and reported offenses were pooled to produce the findings. The area with
-            the highest crime rate appears to be the southern district. The highest crime rates are seen in 
-            Tenderloin and Southern police departments, even though they have the smallest geographic coverage
-            of any of them. The borders of each police agency are established by their workload; therefore, one
-            follows directly from the other. Something important to notice is that despite being a component of
-            the southern district's police department, Treasure Island had relatively few crimes reported in relation to its population. </p> 
-        <iframe src="https://jdot25560.github.io/my_plot.html" sandbox="allow-same-origin allow-scripts" width="600" height="400" scrolling="no" seamless="seamless" frameborder="0"> </iframe>
-        <p>
-        Figure 2: Heatmap which indicates the crime/population for each Police Department District </p>
-        <p> The bar chart depicts the number of reported incidents for the crime categories with over 10,000 cases in the two districts 
-            having the highest crime rates. In the Southern district, larceny/theft stands out as the most frequently occurring crime 
-            category with over 80,000 incidents reported, followed by non-criminal and other offenses. On the other hand, in Tenderloin district,
-            the numbers are more uniformly distributed, and the most commonly committed crime is drug-related offenses. In general, it is quite obvious the 
-            fact that the most common are drug dealing and violent crimes such as assault and theft. Also there is a worth mentioning portion of more light crimes,
-            which are reported as non-criminal. 
-            </p>
-        
-        
+           <div class="container"> 
+                <h1>Association between liquor stores and crime rates in San Francisco.</h1>
+            <p>  
+                The "Police Department Incident Reports Historical 2003 to May 2018.csv" file offers comprehensive information about
+                criminal incidents that happened in San Francisco between January 1, 2003, and May 15, 2018.The San Francisco Police
+                Department (SFPD) collected, analyzed, and made the information publicly accessible through the San Francisco Open 
+                Data Portal. The dataset contains details on the incident's date, time, and place as well as a basic description of the
+                incident type (such as theft or larceny, assault, burglary, etc.).It also contains additional precise information about
+                each occurrence, such as the crime's description, if an arrest was made. The size of the dataset is quite large, with
+                over 1.5 million rows and 35 columns. </p>
+            <p> The kind of crimes that are reported in each area  are what define the profile and standard of living of that region. 
+                The Bookeh plot is made in order to have an overview of the San Francisco district profiles. So moving on to the chart,
+                the percentage rate of each crime category for each district served
+                by a police department is shown. Trespassing reports are common in all districts, although the other types of crime differ.
+                Drugs, theft, assault, and prostitution are recorded crimes in San Francisco's neighborhoods closest to the city center, whereas
+                districts outside the core have high rates of reported crimes involving vehicle theft and reckless driving. The areas in the 
+                center are at a high risk due to the types of events that have been observed over the past ten years, but a heated map may make
+                this more obvious. </p> 
+            <iframe align="center" src="https://jdot25560.github.io/BOKEH.html"  width="100%" height="100%" margin= auto  seamless="seamless"   frameborder="0"> </iframe>
+            Figure 1: Bokeh plot for different crime types in the various PdDistricts
+            <p align="center">The heated map details the criminal activity that occurred in San Francisco between 2007 and 2017.
+                Each district's population and reported offenses were pooled to produce the findings. The area with
+                the highest crime rate appears to be the southern district. The highest crime rates are seen in 
+                Tenderloin and Southern police departments, even though they have the smallest geographic coverage
+                of any of them. The borders of each police agency are established by their workload; therefore, one
+                follows directly from the other. Something important to notice is that despite being a component of
+                the southern district's police department, Treasure Island had relatively few crimes reported in relation to its population. </p> 
+            <iframe src="https://jdot25560.github.io/my_plot.html" sandbox="allow-same-origin allow-scripts" width="600" height="400" scrolling="no" seamless="seamless" frameborder="0"> </iframe>
+            <p>
+            Figure 2: Heatmap which indicates the crime/population for each Police Department District </p>
+            <p> The bar chart depicts the number of reported incidents for the crime categories with over 10,000 cases in the two districts 
+                having the highest crime rates. In the Southern district, larceny/theft stands out as the most frequently occurring crime 
+                category with over 80,000 incidents reported, followed by non-criminal and other offenses. On the other hand, in Tenderloin district,
+                the numbers are more uniformly distributed, and the most commonly committed crime is drug-related offenses. In general, it is quite obvious the 
+                fact that the most common are drug dealing and violent crimes such as assault and theft. Also there is a worth mentioning portion of more light crimes,
+                which are reported as non-criminal. 
+                </p>
 
-        <img src="https://jdot25560.github.io/crime_counts.png" alt="crime_counts" style="height: 500px; width:700px;"/>
-        <p>
-        Figure 3: Barplot for the most reported crimes in the focused districts
-        </p>
-    </body>
-<html>
-    <p>"Boyz n the Hood" is a 1991 American coming-of-age drama film directed by John Singleton.
-        The film tells the story of three young men growing up in South Central Los Angeles, a 
-        predominantly black and low-income area known for its high crime rates and gang activity.
-        At numerous sequences throughout the film, the problem of the government's failure to take action to reduce 
-        crime in particular communities is discussed. In contrast, it is made plain  that the government tend to place
-        liquor stores in such neighborhoods which aggravates the situation even more. In this approach, the ghetto
-        regions see such a severe decline in value that housing costs are rapidly dropping.. Afterwards these low-price
-        houses are sold to landlords 
-        who afterwards upgrade them and sell them profitable in the future. This scheme has as higher motive the profit
-        of specific individuals at the expense of the safety of the people living in the ghettos.  </p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5p9rqqJmDaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>
-    After the aforementioned findings and being motivated by the video, we started looking into the relationship between
-    alcohol use and the growth of crime in these two places. Retail shops known as liquor stores are dedicated to the sale
-    of alcoholic drinks such beer, wine, and spirits. These shops might also sell food, mixers, and other things that go 
-    well with alcoholic beverages. Several jurisdictions have stringent laws governing the location, business hours, and 
-    who is permitted to buy alcohol at liquor stores. In certain places, liquor stores are run and owned by the government,
-    whereas in other places, they are run and owned by private businesses. Indeed, high levels of alcohol outlet density can
-    contribute to various negative outcomes, including increased alcohol consumption, impaired driving, and violent crime.
-    Pamela J.Trankenstein et al. in a <a href="https://pubmed.ncbi.nlm.nih.gov/30256427/">survey</a> have proven that a 10% increase in alcohol outlet access was associated with
-    a 4.2% increase in violent crime exposure.  Off-premise outlets such as these liquor stores were found to have a greater
-    association with violent crime than on-premise outlets such as bars or pubs.  <a href="https://www.yumpu.com/en/document/read/4099653/do-liquor-stores-increase-crime-and-urban-decay-evidence-from-">Other results</a> show that opening a new alcohol 
-    outlet increases both violent and property crimes, especially in low socioeconomic status neighborhoods. Also both surveys conclude that 
-    violent and property crimes as well as drug offenses are mostly reported in such regions with a high density of liquor stores. This claim is 
-    also confirmed by the above figure of "Crime counts by category and Police District". 
-   </p> 
-<img src="https://jdot25560.github.io/shops.png" alt="crime_counts" style="height: 500px; width:500px;"/>
+
+
+            <img src="https://jdot25560.github.io/crime_counts.png" alt="crime_counts" style="height: 500px; width:700px;"/>
+            <p>
+            Figure 3: Barplot for the most reported crimes in the focused districts
+            </p>
+        </body>
+    <html>
+        <p>"Boyz n the Hood" is a 1991 American coming-of-age drama film directed by John Singleton.
+            The film tells the story of three young men growing up in South Central Los Angeles, a 
+            predominantly black and low-income area known for its high crime rates and gang activity.
+            At numerous sequences throughout the film, the problem of the government's failure to take action to reduce 
+            crime in particular communities is discussed. In contrast, it is made plain  that the government tend to place
+            liquor stores in such neighborhoods which aggravates the situation even more. In this approach, the ghetto
+            regions see such a severe decline in value that housing costs are rapidly dropping.. Afterwards these low-price
+            houses are sold to landlords 
+            who afterwards upgrade them and sell them profitable in the future. This scheme has as higher motive the profit
+            of specific individuals at the expense of the safety of the people living in the ghettos.  </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5p9rqqJmDaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <p>
-    Figure 4: Google maps screenshot for the locations of all liquor stores in San Fransisco
-     </p>
-  <p>In our case it is clear from a quick search using Maps that the density of liquor stores in those two areas is higher than everywhere else 
-      in San Francisco. The stores are not far apart from one another and compared to similar stores in other regions, which are open fewer hours
-      a day, their opening hours are longer. This fact facilitates the access of citizens to alcohol and its consumption and makes them more prone
-      to criminal activity. Since, drug offenses, violent crimes, and property crimes are all linked to high alcohol use. In conclusion, government's policies
-      should be aimed at reducing the density of liquor stores in certain areas. This might be effective in reducing rates of crime and improving the neighborhood's
-      residents life quality overall. 
-      </p> 
+        After the aforementioned findings and being motivated by the video, we started looking into the relationship between
+        alcohol use and the growth of crime in these two places. Retail shops known as liquor stores are dedicated to the sale
+        of alcoholic drinks such beer, wine, and spirits. These shops might also sell food, mixers, and other things that go 
+        well with alcoholic beverages. Several jurisdictions have stringent laws governing the location, business hours, and 
+        who is permitted to buy alcohol at liquor stores. In certain places, liquor stores are run and owned by the government,
+        whereas in other places, they are run and owned by private businesses. Indeed, high levels of alcohol outlet density can
+        contribute to various negative outcomes, including increased alcohol consumption, impaired driving, and violent crime.
+        Pamela J.Trankenstein et al. in a <a href="https://pubmed.ncbi.nlm.nih.gov/30256427/">survey</a> have proven that a 10% increase in alcohol outlet access was associated with
+        a 4.2% increase in violent crime exposure.  Off-premise outlets such as these liquor stores were found to have a greater
+        association with violent crime than on-premise outlets such as bars or pubs.  <a href="https://www.yumpu.com/en/document/read/4099653/do-liquor-stores-increase-crime-and-urban-decay-evidence-from-">Other results</a> show that opening a new alcohol 
+        outlet increases both violent and property crimes, especially in low socioeconomic status neighborhoods. Also both surveys conclude that 
+        violent and property crimes as well as drug offenses are mostly reported in such regions with a high density of liquor stores. This claim is 
+        also confirmed by the above figure of "Crime counts by category and Police District". 
+       </p> 
+    <img src="https://jdot25560.github.io/shops.png" alt="crime_counts" style="height: 500px; width:500px;"/>
+        <p>
+        Figure 4: Google maps screenshot for the locations of all liquor stores in San Fransisco
+         </p>
+      <p>In our case it is clear from a quick search using Maps that the density of liquor stores in those two areas is higher than everywhere else 
+          in San Francisco. The stores are not far apart from one another and compared to similar stores in other regions, which are open fewer hours
+          a day, their opening hours are longer. This fact facilitates the access of citizens to alcohol and its consumption and makes them more prone
+          to criminal activity. Since, drug offenses, violent crimes, and property crimes are all linked to high alcohol use. In conclusion, government's policies
+          should be aimed at reducing the density of liquor stores in certain areas. This might be effective in reducing rates of crime and improving the neighborhood's
+          residents life quality overall. 
+          </p> 
+     </div>
+    </body>
+    </html>
