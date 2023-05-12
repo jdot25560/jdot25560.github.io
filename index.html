@@ -35,23 +35,61 @@
 <head>
 <body>
         <div class="container"> 
-            <h1>Association between liquor stores and crime rates in San Francisco.</h1>
+            <h1>Association between liquor stores and crime rates in New York City.</h1>
             <p>  
-                The "Police Department Incident Reports Historical 2003 to May 2018.csv" file offers comprehensive information about
-                criminal incidents that happened in San Francisco between January 1, 2003, and May 15, 2018.The San Francisco Police
-                Department (SFPD) collected, analyzed, and made the information publicly accessible through the San Francisco Open 
-                Data Portal. The dataset contains details on the incident's date, time, and place as well as a basic description of the
-                incident type (such as theft or larceny, assault, burglary, etc.).It also contains additional precise information about
-                each occurrence, such as the crime's description, if an arrest was made. The size of the dataset is quite large, with
-                over 1.5 million rows and 35 columns. </p>
-            <p> The kind of crimes that are reported in each area  are what define the profile and standard of living of that region. 
-                The Bookeh plot is made in order to have an overview of the San Francisco district profiles. So moving on to the chart,
-                the percentage rate of each crime category for each district served
-                by a police department is shown. Trespassing reports are common in all districts, although the other types of crime differ.
-                Drugs, theft, assault, and prostitution are recorded crimes in San Francisco's neighborhoods closest to the city center, whereas
-                districts outside the core have high rates of reported crimes involving vehicle theft and reckless driving. The areas in the 
-                center are at a high risk due to the types of events that have been observed over the past ten years, but a heated map may make
-                this more obvious. </p> 
+                The alcohol-violence link is well-established in social science research, particularly focusing on the geospatial influence
+                    of alcohol outlets on violence. Studies(Gorman et al. 2018; Gruenewald and Remer 2006; Livingston 2008; Pridemore and
+                    Grubesic 2013; Roman et al. 2008; White, Gainey, and Triplett 2015; Zhu, Gorman, and Horel, 2004) have consistently shown
+                    that areas with higher alcohol outlet density tend to have higher rates of violence and street crimes. This relationship
+                    has also been observed in relation to interpersonal violence, domestic violence, suicide mortality, and disadvantaged
+                    neighborhood characteristics.
+                </p>
+                Additional research (Gmel, Holmes, and Studer 2016) has explored the spatial influence of different types
+                of alcohol outlets on crime, indicating that not all types of outlets are equally criminogenic. These studies have
+                primarily compared on-premise (where alcohol is consumed on the premises) and off-premise (where alcohol is sold and
+                distributed off the premises) facilities. They have identified that on-premise facilities, such as bars or restaurants,
+                have different effects compared to off-premise facilities. While there appears to be a correlation, it's important to
+                note that crime rates are influenced by a multitude of factors that may vary by neighborhood. Therefore, this issue
+                warrants a deeper exploration to understand the underlying causes of crime in these areas.
+                <p>
+                <p>New York City is the largest and most diverse metropolis in the United States, comprising multiple communities
+                        spread across five boroughs: Manhattan, Brooklyn, the Bronx, Queens, and Staten Island. In the United States,
+                        ghettos have historically been associated with racial segregation and discriminatory housing policies such as
+                        redlining, which restricted access to mortgage lending and property ownership for people of color. These policies
+                        contributed to the creation of urban neighborhoods that were predominantly occupied by low-income African Americans
+                        and other minority groups. While the term "ghetto" can be controversial and carries a negative connotation, it is
+                        often used in scholarly research and public discourse to refer to areas with high levels of poverty, crime, and 
+                        social disadvantage. However, it's important to recognize the complexity of these neighborhoods and the various factors
+                        that contribute to their formation and persistence.           
+                        <p>
+            <p>From 2006, the New York City Police Department (NYPD) reports of violent offences as well as basic information about them.
+                    For the current investigation, there will be used the reported crimes after 2013 since they provide the most current
+                    and relevant information. On the dataset each record represents one reported arrest in NYC and contains details on the
+                    type of crime, the location, and the time of enforcement. Additionally, details about suspect demographics are also
+                    presented (age,sex,race).The dataset will be used to examine whether there is a correlation between crime rates in these
+                    areas and the number of liquor stores present a new dataset including information about the exact location of the operating
+                    liquor stores in NYC will be combined with NYPD dataset. </p> 
+                <p> Investigating the correlation between crime rates or types and the location of liquor stores in NYC can help us understand the
+                        factors that contribute to crime in specific neighborhoods, identify potential areas for crime prevention efforts, and inform
+                        strategies to promote public safety and improve quality of life. By examining the relationship between liquor store density and
+                        crime rates, policy decisions and interventions can be made to reduce crime and violence and create safer, more livable communities.
+                        <p>
+                <p> Zoom as a genre of data story that focuses on a particular subset of the data and allows readers to explore it in more detail was used in
+                        this case . The goal is to provide a deeper understanding of a specific aspect of the data by interacting with it directly. Interactive
+                        visualizations such as maps and scatter plots and heat maps will help in the exploration of our main goal : correlation between crimes
+                        and liquor stores operating in "ghettos" without excluding all the other aereas included in the dataset .  <p>
+                <p> In order to visualize spatial data and show the distribution of values across the geographic area a choropleth map (Annotations & Layering) 
+                        was created.This type of map uses color to represent different values in different geographic areas the values of our map represent the
+                        number of reported crimes divided by the population of each police department district. Using this map it is easy to regognise the areas
+                         that are reported as more dangerous in terms of criminal activity but also the exact location of them. On the map the red dots represent
+                        the liquor stores operating in different neighbohoods of NYC . It is noted that the dataset used for the liquore stores location was divided
+                        into clusters based on the coordinates and distance between each record. Text labels and captions are also tools that fall under Annotations
+                        & Layering. Are used to add context and information to a visualization, such as titles, axis labels, and annotations about specific data points
+                        or trends in order to make it more clear for the readers. Lastly, readers can zoom in and out on the map created to see more details about a
+                        specific region or neighborhood ,preferly "ghettos", or pan across the scatter plot to explore different trends and patterns in the data of the
+                        stores. Zoom and pan are particularly useful for exploring the  large and complex dataset  where different levels of detail are important to
+                        understanding the overall story . <p>
+                
             <iframe align="center" src="https://jdot25560.github.io/BOKEH.html"  width="100%" height="100%" margin= auto  seamless="seamless"   frameborder="0"> </iframe>
             Figure 1: Bokeh plot for different crime types in the various PdDistricts
             <p align="center">The heated map details the criminal activity that occurred in San Francisco between 2007 and 2017.
